@@ -14,7 +14,7 @@ function generateQR() {
         imgBox.classList.add("show-img");
     }
     else {
-        // if text or url is empty
+        // if text or url is empty...
         qrText.classList.add("error");
         setTimeout(() => {
             // shake animation for 10 times
