@@ -50,7 +50,7 @@ https://your-username.github.io/qr-code-generator/
 
 ---
 
-## ⚙️ How It Works
+## ⚙️ How It Works...
 
 1. User enters a URL or text.
 2. JavaScript generates a QR code using an API.
