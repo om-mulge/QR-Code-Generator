@@ -122,6 +122,28 @@ body {
     animation: fadeIn 0.6s ease;
 }
 
+/* Download Link */
+
+#downloadLink {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #c084fc, #7c3aed);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+}
+
+#downloadLink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(124, 58, 237, 0.5);
+}
+
 /* Error shake */
 
 .error {
