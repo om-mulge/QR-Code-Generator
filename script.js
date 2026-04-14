@@ -6,27 +6,25 @@ let downloadLink = document.getElementById("downloadLink");
 
 // function for generation QR code
 function generateQR() {
-
     if (qrText.value.length > 0) {
-        // calling API URL and adding it as an image
         qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
 
-        // showing QR code
         imgBox.classList.add("show-img");
 
-        // set download link
         downloadLink.href = qrImage.src;
         downloadLink.style.display = "block";
-    }
-    else {
-        // if text or url is empty...
+    } else {
         qrText.classList.add("error");
+
         setTimeout(() => {
-            // shake animation for 10 times
             qrText.classList.remove("error");
         }, 1000);
 
-        // hide download link
         downloadLink.style.display = "none";
     }
+}
+
+// ✅ KEEP THIS OUTSIDE
+function openPortfolio() {
+    window.open("https://ommulge-omega.vercel.app/", "_blank");
 }

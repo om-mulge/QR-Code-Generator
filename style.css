@@ -195,3 +195,13 @@ body {
         padding: 25px;
     }
 }
+button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:last-child {
+    background-color: #4CAF50;
+    color: white;
+}
